@@ -1,8 +1,8 @@
 #!/bin/sh
 
-if [ "$EUID" -ne 0 ]; then 
-  echo "Please run as root"
-  exit
+if (( $EUID != 0 )); then
+    echo "Please run as root"
+    exit 1
 fi
 
 if command -v wget >/dev/null 2>&1 ; then
