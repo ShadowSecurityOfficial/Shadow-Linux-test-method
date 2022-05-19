@@ -1,8 +1,8 @@
 #!/bin/sh
 
-if [ $EUID -ne 0 ]; then
-   echo "This script must be run as root."
-   exit 1
+if [ "$EUID" -ne 0 ]; then 
+  echo "Please run as root"
+  exit
 fi
 
 if command -v wget >/dev/null 2>&1 ; then
