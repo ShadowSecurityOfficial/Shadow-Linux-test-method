@@ -9,6 +9,13 @@ else
     exit 1
 fi
 
+if command -v qemu-utils >/dev/null 2>&1 ; then
+    echo "wget found."
+else
+    echo "Missing dependency: wget was not found. Please install."
+    exit 1
+fi
+
 if [ -d "/bedrock/" ]; then
     echo "Bedrock Linux detected, continuing." 
 else
