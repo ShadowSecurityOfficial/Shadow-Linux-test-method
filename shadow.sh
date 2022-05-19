@@ -3,7 +3,6 @@
 HEIGHT=15
 WIDTH=40
 CHOICE_HEIGHT=4
-SCREEN_COLOR = WHITE,BLACK,OFF
 BACKTITLE="ShadowSecuritySuite | Shadow-Linux"
 TITLE="Shadow-Linux"
 MENU="Choose one of the following options:"
