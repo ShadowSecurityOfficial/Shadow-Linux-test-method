@@ -1,9 +1,6 @@
 #!/bin/sh
 
-if (( $EUID != 0 )); then
-    echo "Please run as root"
-    exit 1
-fi
+if [[ `id -u` -ne 0 ]] ; then echo "Please run as root" ; exit 1 ; fi
 
 if command -v wget >/dev/null 2>&1 ; then
     echo "wget found."
