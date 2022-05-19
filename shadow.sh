@@ -10,7 +10,7 @@ else
 fi
 
 if command -v qemu-utils >/dev/null 2>&1 ; then
-    echo "wget found."
+    echo "qemu-utils found."
 else
     echo "Missing dependency: wget was not found. Please install."
     exit 1
