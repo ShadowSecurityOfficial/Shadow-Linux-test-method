@@ -1,6 +1,6 @@
 # Shadow-Linux
 
-Shadow-Linux is the most hi-tech ethical hacking GNU/Linux distribution. Shadow-Linux is a meta-distribution and is part of the larger ShadowSecuritySuite, Shadow-Linux allows you to run mutiple ethical hacking GNU/Linux distributions on one distribution and is an extension of the Bedrock GNU/Linux meta-distribution, when you run the script using ./shadow.sh in the directory where Shadow-Linux resides, a GUI will pop up asking you questions on what distributions you want and will selected will begin to install them, Shadow-Linux does not require installation of Bedrock Linux prior to running as Shadow-Linux will take care of the installation, if you have already hijacked using Bedrock Linux do not worry our script will detect this change.
+Shadow-Linux is the most hi-tech ethical hacking GNU/Linux distribution. Shadow-Linux is a meta-distribution and is part of the larger ShadowSecuritySuite, Shadow-Linux allows you to run mutiple ethical hacking GNU/Linux distributions on one distribution and is an extension of the Bedrock GNU/Linux meta-distribution, when you run the script using ./shadow.sh in the directory where Shadow-Linux resides, a GUI will pop up asking you questions on what distributions you want and when selected will begin to install them, Shadow-Linux does not require installation of Bedrock Linux prior to running as Shadow-Linux will take care of the installation, if you have already hijacked using Bedrock Linux do not worry our script will detect this change.
 
 ㊙️ "The more silent you are, the more you can silence." ㊙️
 
