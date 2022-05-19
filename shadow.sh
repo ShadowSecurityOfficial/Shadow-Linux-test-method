@@ -17,6 +17,4 @@ else
 fi
 
 sudo -E rm -rf /shadowtmp/
-sudo -E mkdir /shadowtmp/ && cd /shadowtmp/ && sudo -E wget https://kali.download/virtual-images/kali-2022.2/kali-linux-2022.2-vmware-amd64.7z && sudo -E 7za e kali-linux-2022.2-vmware-amd64.7z 
-sudo -E brl import /shadowtmp/kali-linux-2022.2-vmware-amd64.vmdk -n "kali"
-sudo -E cat /shadow/etc/shadow.conf | sudo -E pcregrep -o '(?<=default = ).*(?=:/sbin/init)' | sudo -E sed -n 2p | sudo -E xargs -I {} sed -i 's/'{}'/kali/g' /shadow/etc/shadow.conf
+sudo -E mkdir /shadowtmp/ && cd /shadowtmp && sudo -E wget https://kali.download/virtual-images/kali-2022.2/kali-linux-2022.2-vmware-amd64.7z && sudo -E 7za e kali-linux-2022.2-vmware-amd64.7z && sudo -E brl import /shadowtmp/kali-linux-2022.2-vmware-amd64.vmdk -n "kali" && sudo -E cat /shadow/etc/shadow.conf | sudo -E pcregrep -o '(?<=default = ).*(?=:/sbin/init)' | sudo -E sed -n 2p | sudo -E xargs -I {} sed -i 's/'{}'/kali/g' /shadow/etc/shadow.conf
