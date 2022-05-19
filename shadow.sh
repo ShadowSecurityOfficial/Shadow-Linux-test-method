@@ -1,5 +1,10 @@
 #!/bin/sh
 
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root."
+   exit 1
+fi
+
 if [ -d "/bedrock/" ]; then
     echo "Bedrock Linux detected, continuing." 
 else
