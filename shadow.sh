@@ -12,7 +12,7 @@ fi
 if command -v qemu-img >/dev/null 2>&1 ; then
     echo "qemu-utils found."
 else
-    echo "Missing dependency: wget was not found. Please install."
+    echo "Missing dependency: qemu-utils was not found. Please install."
     exit 1
 fi
 
