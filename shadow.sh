@@ -1,7 +1,7 @@
 #!/bin/sh
 
 if [ -d "/bedrock/" ]; then
-    echo "Bedrock Linux detected, continuing the installation." 
+    echo "Bedrock Linux detected, continuing." 
 else
     echo "Bedrock Linux has not been detected as installed, please install Bedrock Linux then rerun the script."
     exit 1
